@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#EDF1EF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.qiantai_admin.borrowActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="评论区"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="30sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <EditText
+            android:gravity="top"
+            android:id="@+id/remark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_weight="3"
+            android:hint="请输入评论"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_remarkcommit"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:background="@drawable/bg_button_blue_gradient"
+            android:layout_height="wrap_content"
+            android:text="提交"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_remarkback"
+            android:text="返回"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:background="@drawable/bg_button_blue_gradient"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

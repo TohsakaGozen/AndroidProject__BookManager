@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <!--    android:background="@drawable/bg"-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ng1">
+    </ImageView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/roundbutton2"
+        android:elevation="5dp"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="60dp"
+        android:elevation="7dp">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:textColor="@color/mainstr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/roundbutton3"
+            android:hint="用户名"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="#BE000000"
+            android:text=""
+            />
+
+        <EditText
+            android:textColor="@color/mainstr"
+            android:text=""
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbutton3"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColorHint="#BE000000" />
+
+        <CheckBox
+            android:buttonTint="@color/white"
+            android:id="@+id/rmber_pwd"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/password"
+            android:text="记住密码" />
+
+<!--        <CheckBox
+            android:buttonTint="@color/white"
+            android:id="@+id/auto_login"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/password"
+            android:text="自动登录" />-->
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="Check"
+        android:text="立即登录"
+        android:textColor="#593602"
+        android:background="@drawable/bg_button_blue_gradient"
+        />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="Check"
+        android:text="注册"
+        android:textColor="#593602"
+        android:background="@drawable/bg_button_blue_gradient"
+        />
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="Check"
+        android:text="管理员登录"
+        android:textColor="#593602"
+        android:background="@drawable/bg_button_blue_gradient"
+        />
+
+</RelativeLayout>
